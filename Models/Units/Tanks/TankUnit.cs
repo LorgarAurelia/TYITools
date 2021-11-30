@@ -13,10 +13,10 @@ namespace TYITools.Models.Units.Tanks
         public int CounterAttack { get; set; }
         public int IsHitOn { get; set; }
         public List<Armour> Armours { get; set; }
-        public int Tactical { get; set; }
-        public int TerrainDash { get; set; }
-        public int CrossCountryDash { get; set; }
-        public int RoadDash { get; set; }
+        public string Tactical { get; set; }
+        public string TerrainDash { get; set; }
+        public string CrossCountryDash { get; set; }
+        public string RoadDash { get; set; }
         public int Cross { get; set; }
         public List<Weapons> Weapons { get; set; }
         public List<Options> Options { get; set; }

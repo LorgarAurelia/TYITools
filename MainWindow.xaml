@@ -69,9 +69,18 @@
         <TextBox x:Name="UnitSpecialRules" HorizontalAlignment="Left" Margin="264,690,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
         <Label Content="Special Rule Text" HorizontalAlignment="Center" Margin="0,686,0,0" VerticalAlignment="Top" Height="26" Width="100"/>
         <TextBox x:Name="UnitSpecialRuleText" HorizontalAlignment="Left" Margin="452,690,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="312" Height="55"/>
-        <Button x:Name="AddUnitSpecialRules" Content="Add Special Rule" HorizontalAlignment="Left" Margin="625,771,0,0" VerticalAlignment="Top" Width="133"/>
-        <Button x:Name="SaveUnit" Content="Save Unit" HorizontalAlignment="Left" Margin="625,873,0,0" VerticalAlignment="Top" Width="133"/>
+        <Button x:Name="AddUnitSpecialRules" Content="Add Special Rule" HorizontalAlignment="Left" Margin="625,771,0,0" VerticalAlignment="Top" Width="133" Click="AddUnitSpecialRules_Click"/>
+        <Button x:Name="SaveUnit" Content="Save Unit" HorizontalAlignment="Left" Margin="625,940,0,0" VerticalAlignment="Top" Width="133" Click="SaveUnit_Click"/>
         <Label Content="Fire Power" HorizontalAlignment="Left" Margin="27,403,0,0" VerticalAlignment="Top" Height="26" Width="73"/>
         <TextBox x:Name="FirePower" HorizontalAlignment="Left" Margin="107,407,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Rectangle HorizontalAlignment="Left" Height="94" Margin="20,826,0,0" Stroke="Black" VerticalAlignment="Top" Width="748"/>
+        <Label Content="Unit Options" HorizontalAlignment="Left" Margin="277,826,0,0" VerticalAlignment="Top" Height="30" Width="80"/>
+        <Label Content="Quantity" HorizontalAlignment="Left" Margin="34,860,0,0" VerticalAlignment="Top" Height="26" Width="66"/>
+        <TextBox x:Name="Quantity" HorizontalAlignment="Left" Margin="96,864,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Content" HorizontalAlignment="Left" Margin="189,860,0,0" VerticalAlignment="Top" Height="26" Width="61"/>
+        <TextBox x:Name="Content" HorizontalAlignment="Left" Margin="270,864,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+        <Label Content="Content" HorizontalAlignment="Left" Margin="452,860,0,0" VerticalAlignment="Top" Height="26" Width="61"/>
+        <TextBox x:Name="Cost" HorizontalAlignment="Left" Margin="540,864,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+        <Button x:Name="AddOption" Content="Add Option" HorizontalAlignment="Left" Margin="679,889,0,0" VerticalAlignment="Top" Width="75" Click="AddOption_Click"/>
     </Grid>
 </Window>
