@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TYITools.Models.Rules;
 
 namespace TYITools.Models.Units
 {
@@ -36,7 +37,7 @@ namespace TYITools.Models.Units
         }
         public int Antitank { get; set; }
         public int FirePower { get; set; }
-        public List<string> Notes { get; set; }
+        public List<UnitsRules> Notes { get; set; }
 
         public Weapons()
         {

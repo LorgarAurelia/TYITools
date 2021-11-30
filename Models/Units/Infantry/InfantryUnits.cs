@@ -20,7 +20,7 @@ namespace TYITools.Models.Units.Infantry
         public int Cross { get; set; }
         public List<Weapons> Weapons { get; set; }
         public List<Options> Options { get; set; }
-        public List<UntitsRules> SpecialRules { get; set; }
+        public List<UnitsRules> SpecialRules { get; set; }
 
         public InfantryUnits()
         {

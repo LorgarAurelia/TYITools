@@ -1,6 +1,6 @@
 ﻿namespace TYITools.Models.Rules
 {
-    public class UntitsRules
+    public class UnitsRules
     {
         public string Reference { get; set; }
         public string Name { get; set; }

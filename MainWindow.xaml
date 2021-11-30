@@ -5,6 +5,73 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MongoDBTest"
         mc:Ignorable="d"
-        Title="TeamYankee Roster Editor" Height="600" Width="1200">
-    <Grid/>
+        Title="TeamYankee Data Editor" Height="1000" Width="800">
+    <Grid>
+        <Label Content="Courage" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Height="25" Width="74"/>
+        <TextBox x:Name="CourageTank" HorizontalAlignment="Left" Margin="89,44,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Morale" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Height="25" Width="64"/>
+        <TextBox x:Name="MoraleTank" HorizontalAlignment="Left" Margin="89,87,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Remount" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Height="25" Width="74"/>
+        <TextBox x:Name="Remount" HorizontalAlignment="Left" Margin="89,134,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Skill" HorizontalAlignment="Left" Margin="296,40,0,0" VerticalAlignment="Top" Height="25" Width="45"/>
+        <TextBox x:Name="Skill" HorizontalAlignment="Left" Margin="346,44,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Assault" HorizontalAlignment="Left" Margin="277,83,0,0" VerticalAlignment="Top" Height="25" Width="64"/>
+        <TextBox x:Name="Assault" HorizontalAlignment="Left" Margin="346,87,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="CounterAttack" HorizontalAlignment="Left" Margin="243,130,0,0" VerticalAlignment="Top" Height="25" Width="98"/>
+        <TextBox x:Name="CounterAttack" HorizontalAlignment="Left" Margin="346,134,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Is Hit On" HorizontalAlignment="Left" Margin="505,40,0,0" VerticalAlignment="Top" Height="25" Width="69"/>
+        <TextBox x:Name="IsHitOn" HorizontalAlignment="Left" Margin="579,44,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Rectangle HorizontalAlignment="Center" Height="58" Margin="0,197,0,0" Stroke="Black" VerticalAlignment="Top" Width="780"/>
+        <Label Content="Front" HorizontalAlignment="Left" Margin="20,209,0,0" VerticalAlignment="Top" Height="25" Width="50"/>
+        <TextBox x:Name="Front" HorizontalAlignment="Left" Margin="75,213,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Side" HorizontalAlignment="Left" Margin="220,209,0,0" VerticalAlignment="Top" Height="25" Width="50"/>
+        <TextBox x:Name="Side" HorizontalAlignment="Left" Margin="277,213,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Top" HorizontalAlignment="Left" Margin="452,209,0,0" VerticalAlignment="Top" Height="25" Width="50"/>
+        <TextBox x:Name="Top" HorizontalAlignment="Left" Margin="519,213,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Side_Copy_TextChanged"/>
+        <Button x:Name="AddArmour" Content="Add Armour Type" HorizontalAlignment="Left" Margin="679,213,0,0" VerticalAlignment="Top" Width="99" Click="AddArmour_Click"/>
+        <Label Content="Броня" HorizontalAlignment="Center" Margin="0,166,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tactical" HorizontalAlignment="Left" Margin="20,284,0,0" VerticalAlignment="Top" Height="25" Width="50"/>
+        <TextBox x:Name="Tacticel" HorizontalAlignment="Left" Margin="89,288,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Terrain Dash" HorizontalAlignment="Left" Margin="248,284,0,0" VerticalAlignment="Top" Height="25" Width="88"/>
+        <TextBox x:Name="TerrainDash" HorizontalAlignment="Left" Margin="346,288,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cross Country Dash" HorizontalAlignment="Left" Margin="496,284,0,0" VerticalAlignment="Top" Height="25" Width="124"/>
+        <TextBox x:Name="CrossCountryDash" HorizontalAlignment="Left" Margin="625,288,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Road Dash" HorizontalAlignment="Left" Margin="10,332,0,0" VerticalAlignment="Top" Height="25" Width="74"/>
+        <TextBox x:Name="RoadDash" HorizontalAlignment="Left" Margin="89,336,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cross" HorizontalAlignment="Left" Margin="253,332,0,0" VerticalAlignment="Top" Height="25" Width="88"/>
+        <TextBox x:Name="Cross" HorizontalAlignment="Left" Margin="346,336,0,0" Text="Только цифра" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Remount_Copy4_TextChanged"/>
+        <Rectangle HorizontalAlignment="Center" Height="238" Margin="0,362,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" RenderTransformOrigin="0.507,0.5"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="20,372,0,0" VerticalAlignment="Top" Height="26" Width="50"/>
+        <TextBox x:Name="WeaponName" HorizontalAlignment="Left" Margin="75,376,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Range" HorizontalAlignment="Left" Margin="200,372,0,0" VerticalAlignment="Top" Height="26" Width="50"/>
+        <TextBox x:Name="Range" HorizontalAlignment="Left" Margin="253,376,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Halted" HorizontalAlignment="Left" Margin="381,372,0,0" VerticalAlignment="Top" Height="26" Width="50"/>
+        <TextBox x:Name="Halted" HorizontalAlignment="Left" Margin="438,376,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Moved" HorizontalAlignment="Left" Margin="519,372,0,0" VerticalAlignment="Top" Height="26" Width="50"/>
+        <TextBox x:Name="Moved" HorizontalAlignment="Left" Margin="575,376,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Anti-Tank" HorizontalAlignment="Left" Margin="649,372,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <TextBox x:Name="AntiTank" HorizontalAlignment="Left" Margin="714,376,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"/>
+        <Rectangle HorizontalAlignment="Center" Height="122" Margin="0,441,0,0" Stroke="Black" VerticalAlignment="Top" Width="758"/>
+        <Label Content="Reference" HorizontalAlignment="Left" Margin="34,472,0,0" VerticalAlignment="Top" Height="26" Width="66" RenderTransformOrigin="0.497,0.578"/>
+        <TextBox x:Name="Reference" HorizontalAlignment="Left" Margin="105,476,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Weapons Rules" HorizontalAlignment="Left" Margin="270,441,0,0" VerticalAlignment="Top" Height="26" Width="97"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="204,470,0,0" VerticalAlignment="Top" Height="26" Width="46"/>
+        <TextBox x:Name="WeaponSpecialRule" HorizontalAlignment="Left" Margin="259,474,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Special Rule Text" HorizontalAlignment="Center" Margin="0,472,0,0" VerticalAlignment="Top" Height="26" Width="100" RenderTransformOrigin="0.571,1.305"/>
+        <TextBox x:Name="WeaponSpecialRuleText" HorizontalAlignment="Left" Margin="456,472,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="312" Height="55"/>
+        <Button x:Name="AddSpecialRules" Content="Add Special Rule" HorizontalAlignment="Left" Margin="619,532,0,0" VerticalAlignment="Top" Width="126" Click="AddSpecialRules_Click"/>
+        <Button x:Name="AddWeapon" Content="Add Weapon" HorizontalAlignment="Left" Margin="625,568,0,0" VerticalAlignment="Top" Width="133" Click="AddWeapon_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="173" Margin="20,637,0,0" Stroke="Black" VerticalAlignment="Top" Width="748"/>
+        <Label Content="Unit Special Rules" HorizontalAlignment="Left" Margin="270,646,0,0" VerticalAlignment="Top" Height="29" Width="103"/>
+        <Label Content="Reference" HorizontalAlignment="Left" Margin="34,686,0,0" VerticalAlignment="Top" Height="26" Width="66"/>
+        <TextBox x:Name="UnitReference" HorizontalAlignment="Left" Margin="100,690,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="204,686,0,0" VerticalAlignment="Top" Height="26" Width="46"/>
+        <TextBox x:Name="UnitSpecialRules" HorizontalAlignment="Left" Margin="264,690,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Special Rule Text" HorizontalAlignment="Center" Margin="0,686,0,0" VerticalAlignment="Top" Height="26" Width="100"/>
+        <TextBox x:Name="UnitSpecialRuleText" HorizontalAlignment="Left" Margin="452,690,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="312" Height="55"/>
+        <Button x:Name="AddUnitSpecialRules" Content="Add Special Rule" HorizontalAlignment="Left" Margin="625,771,0,0" VerticalAlignment="Top" Width="133"/>
+        <Button x:Name="SaveUnit" Content="Save Unit" HorizontalAlignment="Left" Margin="625,873,0,0" VerticalAlignment="Top" Width="133"/>
+        <Label Content="Fire Power" HorizontalAlignment="Left" Margin="27,403,0,0" VerticalAlignment="Top" Height="26" Width="73"/>
+        <TextBox x:Name="FirePower" HorizontalAlignment="Left" Margin="107,407,0,0" Text="Значение" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
 </Window>

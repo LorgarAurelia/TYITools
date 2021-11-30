@@ -12,7 +12,7 @@ namespace TYITools.Models.Units.Aircraft
         public int AircraftSave { get; set; }
         public List<Weapons> Weapons { get; set; }
         public List<Options> Options { get; set; }
-        public List<UntitsRules> SpecialRules { get; set; }
+        public List<UnitsRules> SpecialRules { get; set; }
 
         public AircraftUnit()
         {
